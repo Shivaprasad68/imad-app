@@ -9,19 +9,19 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/articleone', function(req, res)
+app.get('/article-one', function(req, res)
 {
-    res.sendFile('this is serverone belongs to shiva prasad');
+    res.send('this is serverone belongs to shiva prasad');
 });
 
-app.get('/articletwo', function(req, res)
+app.get('/article-two', function(req, res)
 {
-    res.sendFile('this is servertwo belongs to tillu');
+    res.send('this is servertwo belongs to tillu');
 });
 
-app.get('/articlethree', function(req, res)
+app.get('/article-three', function(req, res)
 {
-    res.sendFile('this is serverthree belongs to chintu');
+    res.send('this is serverthree belongs to chintu');
 });
 
 app.get('/ui/style.css', function (req, res) {
