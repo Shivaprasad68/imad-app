@@ -21,7 +21,7 @@ app.get('/article-two', function(req, res)
 
 app.get('/article-three', function(req, res)
 {
-    res.send('this is serverthree belongs to chintu');
+    res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
