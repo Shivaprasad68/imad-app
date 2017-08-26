@@ -5,5 +5,5 @@ element.innerHTML='my name is shivaprasad dude';
 
 var image=document.getElementById('madi');
 image.oneclick = function(){
-    image.style.marginleft='200px';
+    image.style.marginLeft='200px';
 };
