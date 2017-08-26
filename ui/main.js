@@ -22,3 +22,20 @@ button.onclick = function(){
    request.open('GET','http://samalashivaprasad68.imad.hasura-app.io/counter',true);
    request.send=(null);
 };
+ var nameinput = document.getElementById('name');
+ var name = nameinput.value;
+ var submit = document.getElementById('submitbtn');
+ submit.onclick = function(){
+     //amkes the request to the server 
+     
+     //and renders the list of names
+     var names = ['name1','name2','name3','name4'];
+     var list ='';
+     for(var i=0;i<names.Length;i++)
+     {
+         list += '<li>' + names[i] + '</li>';
+     }
+     
+ }
+ var ul = document.getElementById('namelist');
+ 
