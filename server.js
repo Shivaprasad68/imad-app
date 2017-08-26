@@ -10,7 +10,7 @@ var articleone={
     title:'shiva prasad',
     heading:'article-one',
     date:'november 27 1997',
-    content: `<p>
+    content:`<p>
                 this my page brooo.....this my page brooo.....this my page brooo.....this my page brooo.....this my page brooo.....this my page brooo.....vthis my page brooo.....this my page brooo.....this my page brooo.....this my page brooo.....this my page brooo.....
                </p>
               <p>
@@ -21,14 +21,14 @@ var articleone={
               </p>
               <p>
                 this my page brooo.....this my page brooo.....this my page brooo.....this my page brooo.....this my page brooo.....this my page brooo.....vthis my page brooo.....this my page brooo.....this my page brooo.....this my page brooo.....this my page brooo.....
-             </p>'
-};
+             </p>
+`};
 function createTemplate(data){
     var title=data.title;
     var date=data.date;
     var heading=data.heading;
     var content=data.content;
-var htmlTemplate= `
+var htmlTemplate=` 
 <html>
     <head>
         <title>
@@ -58,7 +58,7 @@ var htmlTemplate= `
         </div>
     </body>
 </html>
-`;
+';
 return htmlTemplate;
 }
 
@@ -78,7 +78,7 @@ app.get('/article-two', function(req, res)
 
 app.get('/article-three', function(req, res)
 {
-    res.send(createhtmlTemplate(articleone));
+    res.send(createTemplate(articleone));
 });
 
 app.get('/ui/style.css', function (req, res) {
