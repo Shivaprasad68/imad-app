@@ -5,7 +5,7 @@ element.innerHTML='my name is shivaprasad dude';
 
 var img=document.getElementById('madi');
 var marginLeft=0;
-function marginRight()
+function moveRight()
 {
     marginLeft= marginLeft + 10;
     image.style.marginLeft= marginLeft + 'px';
