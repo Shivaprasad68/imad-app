@@ -30,7 +30,7 @@ button.onclick = function(){
      
      //and renders the list of names
      var names = ['name1','name2','name3','name4'];
-     var list ='';
+     var list =' ';
      for(var i=0;i<names.Length;i++)
      {
          list += '<li>' + names[i] + '</li>';
