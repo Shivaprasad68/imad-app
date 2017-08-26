@@ -58,7 +58,7 @@ var htmlTemplate=`
         </div>
     </body>
 </html>
-';
+`;
 return htmlTemplate;
 }
 
@@ -66,9 +66,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/articlessp1', function(req, res)
+app.get('/article-three', function(req, res)
 {
-   res.sendFile(path.join(__dirname, 'ui', 'articlessp1.html'));
+   res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
 
 app.get('/article-two', function(req, res)
